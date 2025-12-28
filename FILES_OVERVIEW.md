@@ -98,7 +98,7 @@
 
 ```
 awesome-akash/
-└── decred-pulse/
+└── dcrpulse/
     ├── README.md           ← Main docs
     ├── deploy.yaml         ← Deployment template
     ├── config.json         ← Metadata
@@ -110,7 +110,7 @@ You can also submit **Decred Pulse** as a separate app folder:
 
 ```
 awesome-akash/
-└── decred-pulse/
+└── dcrpulse/
     ├── README.md
     ├── deploy.yaml
     ├── config.json
@@ -180,7 +180,7 @@ balancer/
 
 ### Your Decred Pulse Structure:
 ```
-decred-pulse/
+dcrpulse/
 ├── README.md
 ├── deploy.yaml
 ├── config.json

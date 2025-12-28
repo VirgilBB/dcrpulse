@@ -22,16 +22,18 @@ cd awesome-akash
 git checkout -b add-decred-pulse
 ```
 
-### 4. Create Decred Pulse Directory
+### 4. Create Template Folder
+
+Awesome-Akash recommends lowercase folder names. We use `dcrpulse` to match common naming.
 
 ```bash
-mkdir -p decred-pulse
-cd decred-pulse
+mkdir -p dcrpulse
+cd dcrpulse
 ```
 
 ### 5. Copy Files
 
-Copy the following files from `/Users/vb/akash/templates/decred/dcrpulse-akash/` to `awesome-akash/decred-pulse/`:
+Copy the following files from `/Users/vb/akash/templates/decred/dcrpulse-akash/` to `awesome-akash/dcrpulse/`:
 
 - `README.md`
 - `deploy.yaml`
@@ -41,22 +43,28 @@ Copy the following files from `/Users/vb/akash/templates/decred/dcrpulse-akash/`
 
 ```bash
 # From your akash directory
-cp /Users/vb/akash/templates/decred/dcrpulse-akash/README.md awesome-akash/decred-pulse/
-cp /Users/vb/akash/templates/decred/dcrpulse-akash/deploy.yaml awesome-akash/decred-pulse/
-cp /Users/vb/akash/templates/decred/dcrpulse-akash/config.json awesome-akash/decred-pulse/
-cp /Users/vb/akash/templates/decred/dcrpulse-akash/decred.png awesome-akash/decred-pulse/
-cp /Users/vb/akash/templates/decred/dcrpulse-akash/COMMANDS.md awesome-akash/decred-pulse/
+cp /Users/vb/akash/templates/decred/dcrpulse-akash/README.md awesome-akash/dcrpulse/
+cp /Users/vb/akash/templates/decred/dcrpulse-akash/deploy.yaml awesome-akash/dcrpulse/
+cp /Users/vb/akash/templates/decred/dcrpulse-akash/config.json awesome-akash/dcrpulse/
+cp /Users/vb/akash/templates/decred/dcrpulse-akash/decred.png awesome-akash/dcrpulse/
+cp /Users/vb/akash/templates/decred/dcrpulse-akash/COMMANDS.md awesome-akash/dcrpulse/
 ```
 
 ### 6. Add Decred Logo
 
 `decred.png` is included in this package. Copy it into the target folder (shown above).
 
+### 7. Update Table of Contents (Required)
+
+In `awesome-akash/README.md`, add an entry under **Blockchain** (alphabetical). Format:
+
+- `[Decred Pulse](#dcrpulse)`
+
 ### 7. Commit Changes
 
 ```bash
 cd /Users/vb/akash/awesome-akash
-git add decred-pulse/
+git add dcrpulse/
 git commit -m "Add Decred Pulse deployment template
 
 - Decred Pulse dashboard (web UI)
@@ -127,7 +135,7 @@ The Akash team will review your PR and may request changes. Be responsive to fee
 
 - [ ] Fork created
 - [ ] Branch created (`add-decred-pulse`)
-- [ ] All files in `decred-pulse/` directory:
+- [ ] All files in `dcrpulse/` directory:
   - [ ] `README.md`
   - [ ] `deploy.yaml`
   - [ ] `config.json`
