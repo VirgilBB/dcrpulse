@@ -1,4 +1,8 @@
- # Decred Pulse on Akash
+<p align="center">
+  <img src="assets/decred-logo.jpg" alt="Decred logo" width="220" />
+</p>
+
+# Decred Pulse on Akash
 
 Decred is an autonomous digital currency. With a hybrid consensus system, it is built to be a superior store of value for generations to come. The project is designed to ensure that the people who work on Decred are the ones who make decisions. It is a self-funding and self-governing cryptocurrency with a focus on decentralization, security, and sustainability.
 
