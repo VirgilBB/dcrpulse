@@ -62,8 +62,6 @@ curl -sS -u decred:decredpass -H 'Content-Type: application/json' \
 
 Compare with network: https://dcrdata.decred.org/
 
-**📖 See [COMMANDS.md](COMMANDS.md) for more commands.**
-
 ## Security Note
 
 ⚠️ **Important**: The default RPC password is for demonstration only. Please change it in `deploy.yaml` before deploying to production.
