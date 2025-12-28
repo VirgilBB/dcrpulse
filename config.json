@@ -1,0 +1,46 @@
+{
+  "name": "Decred Pulse",
+  "description": "Decred Pulse dashboard + full node (dcrd) combined in one Akash deployment. Includes a persistent full-node backend and a web UI.",
+  "logo": "decred.png",
+  "website": "https://decred.org/",
+  "guide": "https://docs.decred.org/",
+  "github": "https://github.com/decred/dcrd",
+  "category": "blockchain",
+  "deployment": "deploy.yaml",
+  "persistent_storage": true,
+  "ports": [
+    {
+      "port": 80,
+      "protocol": "tcp",
+      "description": "Decred Pulse dashboard (HTTP)"
+    },
+    {
+      "port": 9108,
+      "protocol": "tcp",
+      "description": "P2P Network Port"
+    }
+  ],
+  "resources": {
+    "cpu": "2.5",
+    "memory": "5Gi",
+    "storage": "120Gi"
+  },
+  "env_vars": [
+    {
+      "name": "DCRD_RPC_USER",
+      "description": "dcrd RPC username (dashboard uses this)",
+      "default": "decred"
+    },
+    {
+      "name": "DCRD_RPC_PASS",
+      "description": "dcrd RPC password (dashboard uses this). Change this in production.",
+      "default": "decredpass"
+    },
+    {
+      "name": "DCRD_EXTRA_ARGS",
+      "description": "Additional command-line arguments for dcrd (optional, e.g. --txindex)",
+      "default": ""
+    }
+  ]
+}
+
