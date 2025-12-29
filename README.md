@@ -39,8 +39,8 @@ Why one container? Akash provisions per-service PVCs, so “shared volumes acros
 
 The deployment uses the following default settings:
 
-- **Dashboard**: `http://<your-lease-ingress>/` (port 80)
-- **RPC User**: `decred`
+- **Dashboard**: `http://<your-lease-ingress>/` (port 80) - No password required
+- **RPC User**: `decred` (internal communication only)
 - **RPC Password**: `decredpass` (⚠️ **Change this in production!**)
 - **Storage**: 120Gi persistent storage
 - **CPU**: 2.5 units
@@ -72,7 +72,7 @@ Compare your node's block height with the network: https://dcrdata.decred.org/
 
 ## Security Note
 
-⚠️ **Important**: The default RPC password is for demonstration only. Please change it in `deploy.yaml` before deploying to production.
+⚠️ **Important**: The dashboard itself has no password protection and is publicly accessible via the ingress URL. The RPC password (`decredpass`) is used for internal communication between the dashboard and `dcrd` node. For production deployments, change the RPC password in `deploy.yaml` to secure the internal RPC connection.
 
 ## Need Help?
 
