@@ -81,6 +81,6 @@ Compare your node's block height with the network: https://dcrdata.decred.org/
 
 - **Direct Support**: Email cerebro@cerebro.host
 - **Issues?** Open an issue in [this repository](https://github.com/VirgilBB/dcrpulse)
-- **Questions?** Join [Akash Discord](https://discord.gg/akash)
-- **Decred Support?** Join [Decred Discord](https://discord.gg/decred)
+- **Questions?** Join [Akash Discord](https://discord.com/invite/akash)
+- **Decred Support?** Join [Decred Discord](https://discord.com/invite/dXSmwvYury)
 
