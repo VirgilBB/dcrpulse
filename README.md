@@ -44,7 +44,7 @@ The deployment uses the following default settings:
 
 - **Dashboard**: `http://<your-lease-ingress>/` (port 80) - No password required
 - **RPC User**: `decred` (internal communication only)
-- **RPC Password**: `decredpass` (⚠️ **Change this in production!**)
+- **RPC Password**: `decredpass` (used for internal communication between dashboard and node)
 - **Storage**: 120Gi persistent storage
 - **CPU**: 2.5 units
 - **Memory**: 5Gi
