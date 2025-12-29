@@ -1,6 +1,6 @@
 {
   "$schema": "../config.schema.json",
   "ssh": false,
-  "logoUrl": "https://raw.githubusercontent.com/VirgilBB/dcrpulse/main/decred.png"
+  "logoUrl": "https://raw.githubusercontent.com/akash-network/awesome-akash/master/dcrpulse/assets/decred-logo.jpg"
 }
 
