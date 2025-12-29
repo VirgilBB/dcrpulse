@@ -32,6 +32,7 @@ Why one container? Akash provisions per-service PVCs, so "shared volumes across 
 
 ## Resources
 
+- **Decred Pulse Project**: https://github.com/karamble/dcrpulse
 - **Website**: https://decred.org/
 - **Documentation**: https://docs.decred.org/
 - **Block Explorer**: https://dcrdata.decred.org/
