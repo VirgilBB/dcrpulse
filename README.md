@@ -4,7 +4,9 @@
 
 # Decred Pulse on Akash
 
-Decred is an autonomous digital currency. With a hybrid consensus system, it is built to be a superior store of value for generations to come. The project is designed to ensure that the people who work on Decred are the ones who make decisions. It is a self-funding and self-governing cryptocurrency with a focus on decentralization, security, and sustainability.
+Decred is an autonomous digital currency with a hybrid PoW/PoS consensus system, built to be a superior store of value. Running a full node strengthens the network's decentralization and security. **Decred Pulse** makes it easy to deploy your own full node and web dashboard on Akash Network with just a few clicks—no technical expertise required.
+
+> **Decred Pulse** is an open-source project by [karamble](https://github.com/karamble). This Akash deployment uses the official [dcrpulse](https://github.com/karamble/dcrpulse) project.
 
 ## Features
 
@@ -13,6 +15,7 @@ Decred is an autonomous digital currency. With a hybrid consensus system, it is 
 - **Self-Funding**: Built-in treasury system funds ongoing development
 - **Privacy Features**: Optional privacy transactions via CoinShuffle++
 - **Lightning Network**: Support for instant, low-fee transactions
+- **Watch-Only Wallet Monitoring**: Import Extended Public Keys (xpub) to monitor wallet balances and transactions without exposing private keys
 
 ## About This Deployment
 
@@ -50,21 +53,22 @@ The deployment uses the following default settings:
 3. Open the dashboard URL from Akash Console (Leases → URI)
 4. Monitor logs to track sync progress
 
-### Checking Sync Status (CLI)
+### Watch-Only Wallet Monitoring
 
-You can check sync status from **Akash Console → Shell**:
+You can import an Extended Public Key (xpub) to monitor your Decred wallet without exposing private keys:
 
-### Quick Status Check
+1. Access the dashboard and navigate to **Settings** → **Import Extended Public Key**
+2. Paste your xpub (Decred mainnet xpubs start with `dpub`)
+3. Provide a friendly account name
+4. The wallet will automatically rescan the blockchain to find all historical transactions (typically 5-30 minutes)
 
-Check your node's current block height:
+**Note**: Watch-only wallets can monitor balances and transactions but **cannot spend funds**. This is a security feature that allows you to track your wallet activity without risking your private keys.
 
-```bash
-curl -sS -u decred:decredpass -H 'Content-Type: application/json' \
-  -d '{"jsonrpc":"1.0","method":"getblockcount","params":[],"id":1}' \
-  http://127.0.0.1:9109
-```
+### Monitoring Sync Progress
 
-Compare with network: https://dcrdata.decred.org/
+The dashboard displays real-time sync progress with a percentage status bar and current block height. Simply open the dashboard URL from Akash Console (Leases → URI) to view your node's sync status.
+
+Compare your node's block height with the network: https://dcrdata.decred.org/
 
 ## Security Note
 
