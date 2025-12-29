@@ -4,7 +4,7 @@ version: "2.0"
 services:
   dcrpulse:
     # Combined container: runs dcrd + dcrpulse dashboard in ONE container.
-    image: virgilbb/dcrpulse-combined-akash:v1.8.5
+    image: virgilbb/dcrpulse-combined-akash:v1.8.9
     env:
       - PORT=8080
       - DCRD_RPC_USER=decred
