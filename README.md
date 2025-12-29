@@ -2,11 +2,11 @@
   <img src="assets/decred-logo.jpg" alt="Decred logo" width="220" />
 </p>
 
-# Decred Pulse on Akash
+# dcrpulse on Akash
 
-Decred is an autonomous digital currency with a hybrid PoW/PoS consensus system, built to be a superior store of value. Running a full node strengthens the network's decentralization and security. **Decred Pulse** makes it easy to deploy your own full node and web dashboard on Akash Network with just a few clicks—no technical expertise required.
+Decred is an autonomous digital currency with a hybrid PoW/PoS consensus system, built to be a superior store of value. Running a full node strengthens the network's decentralization and security. **dcrpulse** makes it easy to deploy your own full node and web dashboard on Akash Network with just a few clicks—no technical expertise required.
 
-> **Decred Pulse** is an open-source project by [karamble](https://github.com/karamble). This Akash deployment uses the official [dcrpulse](https://github.com/karamble/dcrpulse) project.
+> **dcrpulse** is an open-source project by [karamble](https://github.com/karamble). This Akash deployment uses the official [dcrpulse](https://github.com/karamble/dcrpulse) project.
 
 ## Features
 
@@ -19,7 +19,7 @@ Decred is an autonomous digital currency with a hybrid PoW/PoS consensus system,
 
 ## About This Deployment
 
-This deployment runs **Decred Pulse (web dashboard) + a full Decred node (`dcrd`)** on Akash Network in **one container**, providing:
+This deployment runs **dcrpulse (web dashboard) + a full Decred node (`dcrd`)** on Akash Network in **one container**, providing:
 
 - **Full blockchain sync** and validation
 - **Web dashboard** exposed on port **80**
@@ -32,7 +32,7 @@ Why one container? Akash provisions per-service PVCs, so "shared volumes across 
 
 ## Resources
 
-- **Decred Pulse Project**: https://github.com/karamble/dcrpulse
+- **dcrpulse Project**: https://github.com/karamble/dcrpulse
 - **Website**: https://decred.org/
 - **Documentation**: https://docs.decred.org/
 - **Block Explorer**: https://dcrdata.decred.org/
