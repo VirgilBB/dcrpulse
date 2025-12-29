@@ -23,14 +23,12 @@ This deployment runs **Decred Pulse (web dashboard) + a full Decred node (`dcrd`
 
 - **Full blockchain sync** and validation
 - **Web dashboard** exposed on port **80**
-- **P2P networking** (optional inbound peers on port **9108**)
+- **P2P networking** on port **9108**
 - **Persistent storage** for blockchain data (PVC)
 
 **Note**: This is not a mining setup. Deploying a full node helps strengthen Decred's network decentralization and security—supporting the network "for the love of the game."
 
 Why one container? Akash provisions per-service PVCs, so "shared volumes across services" don't work the same as docker-compose. Combining the processes avoids that class of issues.
-
-**Port 9108 (P2P)**: The P2P port is exposed for optional inbound peer connections, but it's not required. Your node will still sync via outbound connections. You can set `global: false` in `deploy.yaml` if you prefer not to accept inbound peers.
 
 ## Resources
 
