@@ -52,8 +52,8 @@ The deployment uses the following default settings:
 ## Usage
 
 1. Deploy using the provided `deploy.yaml`
-2. Check deployment logs—you'll see a prominent message: **🔗 ACCESS DASHBOARD: AKASH CONSOLE → LEASES → URI(S) LINK**
-3. Click the **URI(s)** link in Akash Console (Leases tab) to open the dashboard
+2. Check deployment logs—you'll see a prominent message: **🔗 ACCESS DASHBOARD: AKASH CONSOLE → LEASES → <u>URI(S) LINK</u>**
+3. Click the **<u>URI(s)</u>** link in Akash Console (Leases tab) to open the dashboard
 4. View real-time sync progress with percentage status bar (initial sync takes 6-8 hours)
 
 ### Watch-Only Wallet Monitoring
@@ -71,7 +71,7 @@ You can import an Extended Public Key (xpub) to monitor your Decred wallet witho
 
 The deployment logs display sync progress every 5 minutes with clear instructions to access the dashboard. The dashboard shows real-time sync status with percentage progress bar and current block height.
 
-**Access dashboard**: Akash Console → Leases → **URI(s)** link
+**Access dashboard**: Akash Console → Leases → **<u>URI(s)</u>** link
 
 Compare your node's block height with the network: https://dcrdata.decred.org/
 
